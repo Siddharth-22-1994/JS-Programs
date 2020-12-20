@@ -1,0 +1,346 @@
+1. Intro to JS.
+2. Why JS.
+3. Where JS.
+4. Uniquness of JS.
+5. Comapny that uses JS to bulit their application -> Netflix, Walmart, Paypal
+
+Topics
+------
+1. Comments
+ 	i) Single line comments
+ 	ii) Double line comments
+ 							----------------------------------------------
+2. Variables
+ 	i) What is variables
+ 	ii) Using (var and let) ---> dynamic typing
+ 	iii) Rules to declare variables
+ 	iv) What is Identifier
+	v) Local variable and Global variable.( and some examples)
+
+ 																VI) Optional About ECMA Script
+
+ 	Unique JS variable names: 
+ 	URL link: ---->(https://mathiasbynens.be/notes/javascript-identifiers#:~:text=Keywords%20are%20tokens%20that%20have,void%20%2C%20while%20%2C%20and%20with%20.)
+
+ 	1.)var π = Math.PI;
+
+	// Sometimes, you just have to use the Bad Parts of JavaScript:
+	2.)var ಠ_ಠ = eval;
+
+	// Code, Y U NO WORK?!
+	3.)var ლ_ಠ益ಠ_ლ = 42;
+
+	// How about a JavaScript library for functional programming?
+	4.)var λ = function() {};
+
+	// Obfuscate boring variable names for great justice
+	5.)var \u006C\u006F\u006C\u0077\u0061\u0074 = 'heh';
+
+	// …or just make up random ones
+	6.)var Ꙭൽↈⴱ = 'huh';
+
+	// Did you know about the [.] syntax?
+	7.)var ᱹ = 1;
+	console.assert([1, 2, 3][ᱹ] === 2);
+
+	// While perfectly valid, this doesn’t work in most browsers:
+	8.)var foo\u200Cbar = 42;
+
+	// This is *not* a bitwise left shift (`<<`):
+	9.)var 〱〱 = 2;
+	// This is, though:
+	〱〱 << 〱〱; // 8
+
+	// Give yourself a discount:
+	10.)var price_9̶9̶_89 = 'cheap';
+
+	// Fun with Roman numerals
+	11.)var Ⅳ = 4;
+	12.)var Ⅴ = 5;
+	Ⅳ + Ⅴ; // 9
+
+	// Cthulhu was here
+	var Hͫ̆̒̐ͣ̊̄ͯ͗͏̵̗̻̰̠̬͝ͅE̴̷̬͎̱̘͇͍̾ͦ͊͒͊̓̓̐_̫̠̱̩̭̤͈̑̎̋ͮͩ̒͑̾͋͘Ç̳͕̯̭̱̲̣̠̜͋̍O̴̦̗̯̹̼ͭ̐ͨ̊̈͘͠M̶̝̠̭̭̤̻͓͑̓̊ͣͤ̎͟͠E̢̞̮̹͍̞̳̣ͣͪ͐̈T̡̯̳̭̜̠͕͌̈́̽̿ͤ̿̅̑Ḧ̱̱̺̰̳̹̘̰́̏ͪ̂̽͂̀͠ = 'Zalgo';
+
+
+				----------------------Exceptions of Variabes--------------
+
+	1)Multiple Variables in a Single Line  (EG: let one = 1, two = 'two', three;)
+	2)Variable without var Keyword (EG: one = 1;)
+		NOTE: It is Not Recommended to declare a variable without var keyword. It can accidently overwrite an existing global variable.
+						-----------------------------------------------------
+3. Keywords
+	DEF : Keywords are reserved words in JavaScript that you cannot use to indicate variable labels or function names. There are a total of 63 keywords that JavaScript provides to programmers.
+
+	i) Totally 63 keywords in JS.
+						----------------------------------------------------
+4. Operators
+	i) JavaScript operators are symbols that are used to perform operations on operands.
+		a) Arithmatic 
+		b) Comparison
+		c) Assignment
+		d) Bitwise
+		e) Logical
+		f) Special
+
+		Ternary Operator (EG:1):
+		1)  let month = Number(prompt('Enter the month'));
+		    ans = (month == 1)?'January':(month == 2)?'Febuary':(month == 3)?'March':'Unknown Month'
+			alert(ans)
+
+						-----------------------------------------------------	
+5. Datatypes
+	1.) Primitive ---> Number, String, Boolean, Undefined, null
+	2.) Non-Primitive  ---> Objects, Array, RegExp.
+		i)Number methods
+			a)Number()
+			b)toString()
+			c)toExponential()
+			d)toFixed()
+			f)toPrecision()
+			g)parseInt('23.90')
+			f)parseFloat('23.9088')
+			h)Number.MAX_VALUE;
+			i)Number.MIN_VALUE;
+			j)Number.POSITIVE_INFINITY;
+			k)Number.NEGATIVE_INFINITY;
+			l)Number.Nan;
+
+						-----------------------------------------------------
+
+6. Switch
+	DEF:  i) The JavaScript switch statement is used to execute one code from multiple expressions. It is just like else if statement (Syntax)
+
+	ii) The switch case statement in JavaScript is also used for decision making purposes. In some cases, using the switch case statement is seen to be more convenient over if-else statements.
+
+	Note: Conditions for using Switch....
+	a) expression can be of type numbers or strings.
+	b) Dulplicate case values are not allowed.
+	c) The default statement is optional. If the expression passed to switch does not matches with value in any case then the statement under default will be executed.
+	d) The break statement is used inside the switch to terminate a statement sequence.
+	e) The break statement is optional. If omitted, execution will continue on into the next case.
+
+	Switch Eg programs: 
+	1) https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+						----------------------------------------------------
+
+7. Conditional Statement
+	DEF :  i) The JavaScript if-else statement is used to execute the code whether condition is true or false. There are three forms of if statement in JavaScript.(Syntax)
+
+		1) if
+		2) if....else
+		3) if else if 
+  					   -----------------------------------------------------
+
+ 8. Loops
+ 	1) for loop
+ 		DEF: The JavaScript for loop iterates the elements for the fixed number of times. It should be used if number of iteration is known. The syntax of for loop is given below.(Syntax)
+
+ 		Three types
+ 			a) for --> To use break, continue, nested for loop
+ 			b) for/in ---> Examples Link : https://alligator.io/js/for-of-for-in-loops/
+
+ 			c) for/of ---> The for...of statement creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects (e.g., arguments or NodeList), TypedArray, Map, Set, and user-defined iterables.
+
+ 			Enumarable Property --> URL link : https://www.youtube.com/watch?v=aMY3OIFDR6o
+ 	2) foreach()
+ 		Concept --> URL: https://www.youtube.com/watch?v=159EAISAxwg
+ 		Syntax: foreach(item, index, arry)
+
+ 	2) While loop ---> break, continue statemets
+ 		DEF: The JavaScript while loop iterates the elements for the infinite number of times. It should be used if number of iteration is not known.(Syntax)
+
+ 		Eg Programs: i) Addition of 5 random Numbers
+ 					 ii) Fibanochi series
+ 					 iii) sum of given number
+ 					 iv) Palindrome of numbers
+
+ 	3) do while loop
+ 		DEF: A do-while loop is a control flow statement that executes a block of code at least once, and then repeatedly executes the block or not depending on a given boolean condition at the end of the block.
+
+ 		Eg Programs: i) Print all the Even numbers from 0 to 20.
+
+
+9. Function
+		DEF: A function is a set of statements that performs some tasks or does some computation and then return the result to the user. ---> Syntax
+			a) Fun with Parameter
+			b) fun without Parameter
+			c) Fun with return
+			d) Fun called using obj
+			e) About this() method ---> URL LINK: https://www.youtube.com/watch?v=NV9sHLX-jZU
+
+		1) JS Function methods
+			apply(), call(), bind() ---> URL LINK: https://www.youtube.com/watch?v=75W8UPQ5l7k
+
+			a) call()
+				DEF: It is a predefined javascript method, which is used to write methods for different objects. It calls the method, taking the owner object as argument. The keyword this refers to the “owner” of the function or the object it belongs to.
+			b) apply()
+		2) Arrow Function
+			URL link: https://www.youtube.com/watch?v=h33Srr5J9nY
+
+		3) JS function objects
+
+		4) JS prototype --> Javapoint
+			Eg: https://www.tutorialsteacher.com/javascript/prototype-in-javascript
+				https://www.geeksforgeeks.org/prototype-in-javascript/
+
+10. Creating Objects in JS
+		DEF : A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc. JavaScript is an object-based language. Everything is an object in JavaScript. JavaScript is template based not class based. Here, we don't create class to get the object. But, we direct create objects.
+
+		1) 3 ways to create Object.
+		2) Object Method
+
+11. Array
+	DEF: JavaScript array is an object that represents a collection of similar type of elements.
+		1) Types to declare array
+		2) Array Method
+			a)pop()
+			b)push()
+			c)toString()
+			d)join()
+			e)shift()
+			f)unshift()
+			g)x.length
+			h)delete x[0]
+			i)splice()
+			j)concat()
+			k)slice()
+
+12. String
+		1) Creating string
+		2) Creating string using Object
+		3) String method
+			a)length
+			b)toUppercase()
+			c)tolowercase()
+			d)index()
+			e)lastindex()
+			f)slice()
+			g)substring()
+			h)substr()
+			i)replace()
+			j)concat()
+			k)trim()
+			l)charAt()
+			m)charcodeAt()
+			n)split()
+
+13.date
+		1) Date methods
+
+14.Math
+		1) Math methods
+
+15.Window Object
+		1) The window object represents a window in browser. An object of window is created automatically by the browser.
+
+		Window is the object of browser, it is not the object of javascript. The javascript objects are string, array, date etc.
+			a) alert()
+			b) confirm()
+			c) prompt()
+			d) open()
+			e) close()
+
+16.DOM(Document of Objects)
+	1) .innerHTML, getElementById()
+
+		DEF: The getElementById() method returns the elements that has given ID which is passed to the function. This function is widely used in web designing to change the value of any particular element or get a particular element. If passed ID to the function does not exits then it returns null.
+
+	2) change text using .innerHTML
+	3) onclick()
+
+	4)getElementByclassname() ---> It return array
+		Concept URL Link--> https://www.youtube.com/watch?v=0pqLp51w7dw
+		EG problems: a) https://www.w3schools.com/jsref/met_element_getelementsbyclassname.asp
+					 b) https://www.geeksforgeeks.org/html-dom-getelementsbyclassname-method/
+
+	5)getElementByname() ---> It also return array
+		EG Problems: https://www.w3schools.com/jsref/met_doc_getelementsbyname.asp
+
+	6)getElementByTagName() ---> It return array
+		EG problem: https://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
+
+	7).innerText
+		DEF: The innerText property can be used to write the dynamic text on the html document. Here, text will not be interpreted as html text but a normal text.
+			It is used mostly in the web pages to generate the dynamic content such as writing the validation message, password strength etc.
+
+NOTE: innerText, innerHTML, textContent difference between all these.
+
+17.Programs to write Form Validation, Email validation.
+
+18.Class
+	a) normal class with properties
+	b) class with a method
+	c) class with constructors
+	d) class constructor with method
+
+	1)class constructor method -> Javapoint
+	2)super() ---> https://www.youtube.com/watch?v=LT1k2t-66x8
+	3)Inheritance()  --> 1) https://www.youtube.com/watch?v=LT1k2t-66x8
+						  2) https://www.youtube.com/watch?v=40PU3wRpQSo
+	4) Composition
+
+	5) Polymorphism --> https://www.youtube.com/watch?v=XxMUJ9-Pb2E
+
+ To revice:
+	i) Class, Class Protptype, Function Prototype, constructor(with and without parameter), Super(), Inheritance, 
+	Static method
+
+------------------------------------------------------------------------------------------------------
+Refer later
+Exception:(Prototype and class) --> https://www.youtube.com/watch?v=XoQKXDWbL1M
+---------------------------------------------------------------------------------------------------
+
+19. getters and setters
+	a) https://www.youtube.com/watch?v=IbqCWoFO410 --> best(basic)
+	b) for objects ---> https://www.youtube.com/watch?v=bl98dm7vJt0
+	c) for class ---> https://www.youtube.com/watch?v=y4wDanUBNmE
+
+20. filter, map and reduce method
+	for all the three --> https://www.youtube.com/watch?v=rRgD1yVwIvE
+	
+	a) filter ---> https://www.youtube.com/watch?v=WrB_--bVbbs
+
+	b) map --->  https://www.youtube.com/watch?v=hfYa4ugeyuc 
+			  	 https://www.youtube.com/watch?v=djiHm61y8P4
+			     https://www.youtube.com/watch?v=G3BS3sh3D8Q
+	
+	c) reduce --->  https://www.youtube.com/watch?v=g1C40tDP0Bk
+					https://www.youtube.com/watch?v=6_XzV25rkcE --> advanced comparing with strings
+
+								  NODE
+
+1) Intro to node Js
+	a) What is node --> https://www.youtube.com/watch?v=yEHCfRWz-EI
+	b) How node works --> https://www.youtube.com/watch?v=YSyFSnisip0
+
+2) Node.Js Modules 
+	a). https://www.youtube.com/watch?v=TlB_eWDSMt4
+
+									React
+React Basics --> https://www.youtube.com/watch?v=QFaFIcGhPoM&list=PLC3y8-rFHvwgg3vaYJgHGnModB54rxOk3&index=1
+									
+Link ---> https://www.youtube.com/watch?v=Ke90Tje7VS0 --> Mosh(First react app)									
+
+Step 1--> To create react app(Do it in console)
+	sudo npm i -g create-react-app
+
+Step:2--> Create Our app
+	syntax:
+		create-react-app  appname
+		
+Step:3--> Open index.js file --> write  'import "bootstrap/dist/css/bootstrap.css";'
+	Run this is terminal(sudo npm install bootstrap --save) 
+
+
+	
+
+
+
+
+
+
+
+
+
+

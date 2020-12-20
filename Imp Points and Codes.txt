@@ -1,0 +1,5 @@
+1.)To get the day ----> URL Link : https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
+
+	a) const day = new Date().getDay();
+	b) const month = new Date().getMonth();
+

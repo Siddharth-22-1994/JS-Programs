@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p id="demo"> Can i</p>
+<button onclick="myfunction(2,5)" style="background-color: green;color: white;">Click me</button>
+
+<script>
+function myfunction(a,b){
+	document.getElementById("demo").innerHTML=a+b;
+	}
+
+</script>
+
+
+<p id="demo"></p>
+<button onclick="myfun(75)" style="background-color: red;border-radius: 6px;color: white;"> Click me to get Celsius</buton>
+
+<script>
+function myfun(f){
+	
+	document.getElementById("demo").innerHTML = ((5/9) * (f-32));
+
+}
+</script>
+
+
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="C:\Users\madhu\OneDrive\Desktop\Blue_Nebula_iPhone_Wallpaper_0004242.png" width="50" height="40">
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+</body>
+</html>
+
+<p id="king"> can i</p>
+<script>
+	var fruits=["Apple","Banana","Grapes","Mango"];
+	document.getElementById("king").innerHTML='fruits';
+</script>
